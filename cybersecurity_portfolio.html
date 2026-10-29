@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Portfolio | VIT Vellore</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        slateBg: '#0b0f17',
+                        cardBg: '#121824',
+                        borderSubtle: '#1e2638',
+                        accentCyan: '#00e5ff',
+                        accentGreen: '#10b981',
+                        accentPurple: '#a855f7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['Fira Code', 'Courier New', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f17;
+            color: #cbd5e1;
+            background-image: radial-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 0);
+            background-size: 28px 28px;
+        }
+
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+
+        /* Subtle scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e2638;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00e5ff;
+        }
+    </style>
+</head>
+<body class="selection:bg-accentCyan selection:text-slateBg flex flex-col min-h-screen">
+
+    <!-- Minimal Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slateBg/90 border-b border-borderSubtle">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-sm text-white font-medium hover:text-accentCyan transition-colors flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-accentCyan"></span>
+                <span>Cybersecurity <span class="text-gray-500">@</span> VIT Vellore</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6 text-xs font-mono text-gray-400">
+                <a href="#intro" class="hover:text-white transition-colors">01. Intro</a>
+                <a href="#project" class="hover:text-white transition-colors">02. Project</a>
+                <a href="#courses" class="hover:text-white transition-colors">03. Courses</a>
+                <a href="#writing" class="hover:text-white transition-colors">04. Writing</a>
+                <a href="#resume" class="hover:text-white transition-colors">05. Resume</a>
+            </nav>
+
+            <!-- Quick Action -->
+            <a href="#resume" class="text-xs font-mono px-3 py-1.5 rounded border border-accentCyan/40 text-accentCyan hover:bg-accentCyan/10 transition-all">
+                View Resume
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24 flex-grow">
+
+        <!-- 1. Introduction Section -->
+        <section id="intro" class="scroll-mt-24 space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono text-accentCyan uppercase tracking-widest">Academic & Technical Portfolio</span>
+                <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    First-Year Cybersecurity Student
+                </h1>
+                <p class="text-sm font-mono text-gray-400">Vellore Institute of Technology, Vellore &bull; Batch of 2028</p>
+            </div>
+
+            <div class="space-y-5 text-gray-300 text-base leading-relaxed border-l-2 border-borderSubtle pl-6">
+                <!-- Paragraph 1: Who & What -->
+                <p>
+                    I am a first-year undergraduate student at <strong class="text-white">VIT Vellore</strong>, pursuing a Bachelor of Technology in Computer Science and Engineering with a specialization in <strong class="text-white">Cybersecurity</strong>. Passionate about system infrastructure security and ethical hacking, I am actively laying a rigorous technical foundation in computer network protocols, operating system internals, and programming languages including Python, C, and C++.
+                </p>
+
+                <!-- Paragraph 2: Why & Goal -->
+                <p>
+                    My interest in cybersecurity stems from a deep curiosity about how systems operate at a granular level and a commitment to defending digital infrastructure against evolving threats. As modern systems become more interconnected, securing application logic and user privacy is critical. My long-term goal is to specialize in <strong class="text-white">application security engineering and threat intelligence</strong>, helping organizations build resilient software defenses from the ground up.
+                </p>
+
+                <!-- Paragraph 3: Overview -->
+                <p class="text-gray-400 text-sm">
+                    This portfolio serves as a curated showcase of my academic progress at VIT Vellore. It highlights my hands-on security scripting projects, key university coursework, academic technical writing, and a summary of my technical skills in my resume.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Project Section -->
+        <section id="project" class="scroll-mt-24 space-y-6">
+            <div class="border-b border-borderSubtle pb-4">
+                <span class="text-xs font-mono text-accentCyan">SECTION 02</span>
+                <h2 class="text-2xl font-bold text-white font-mono mt-1">Featured Technical Project</h2>
+            </div>
+
+            <div class="bg-cardBg rounded-lg border border-borderSubtle p-6 space-y-6">
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Automated Port & Network Vulnerability Scanner</h3>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-accentCyan/10 text-accentCyan border border-accentCyan/20">Python / Networking</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">A multi-threaded CLI application for rapid reconnaissance and basic service identification.</p>
+                </div>
+
+                <!-- Structured Write-up (a, b, c) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono">
+                    <div class="p-4 rounded bg-slateBg border border-borderSubtle space-y-2">
+                        <span class="text-accentCyan font-semibold uppercase">a) Project Overview</span>
+                        <p class="text-gray-300 leading-relaxed font-sans text-xs">
+                            A lightweight Python security scanner that probes target IP addresses or hostnames for open TCP ports (1–1024), banner info, and potential misconfigurations.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded bg-slateBg border border-borderSubtle space-y-2">
+                        <span class="text-accentGreen font-semibold uppercase">b) Method & Execution</span>
+                        <p class="text-gray-300 leading-relaxed font-sans text-xs">
+                            Built using Python 3 socket APIs and <code class="text-accentCyan">concurrent.futures</code> for fast thread-pooling. Tested inside Kali Linux VMs against Metasploitable targets.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded bg-slateBg border border-borderSubtle space-y-2">
+                        <span class="text-accentPurple font-semibold uppercase">c) Results & Future Steps</span>
+                        <p class="text-gray-300 leading-relaxed font-sans text-xs">
+                            Reduced scan times by 70% using async threading. Future plans: Add CVE cross-referencing and export results to structured JSON reports.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Photographs / Visual Mockups Block -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between font-mono text-xs text-gray-400 mb-2">
+                        <span><i class="fa-solid fa-image text-accentCyan mr-1"></i> Visual Project Evidence & Proof of Concept</span>
+                        <div class="space-x-2">
+                            <button onclick="switchTab('terminal')" id="btn-terminal" class="px-2 py-1 rounded bg-borderSubtle text-white">1. Terminal Output</button>
+                            <button onclick="switchTab('code')" id="btn-code" class="px-2 py-1 rounded hover:bg-borderSubtle text-gray-400">2. Source Code</button>
+                            <button onclick="switchTab('arch')" id="btn-arch" class="px-2 py-1 rounded hover:bg-borderSubtle text-gray-400">3. Architecture</button>
+                        </div>
+                    </div>
+
+                    <!-- View 1: Terminal Output Screenshot Mockup -->
+                    <div id="view-terminal" class="bg-black/90 p-4 rounded border border-borderSubtle font-mono text-xs text-gray-300 space-y-2 overflow-x-auto">
+                        <div class="text-gray-500 pb-2 border-b border-gray-800 flex justify-between">
+                            <span>kali@cyber-lab:~# python3 scanner.py -t 192.168.1.105 -p 1-100</span>
+                            <span class="text-accentGreen">[ACTIVE LAB VM]</span>
+                        </div>
+                        <p class="text-accentCyan">[+] Initiating Multi-Threaded Port Scan on 192.168.1.105...</p>
+                        <p class="text-gray-400">[i] Threads active: 20 | Timeout set: 1.0s</p>
+                        <p class="text-accentGreen">[OPEN] Port 21 (FTP) - Banner: vsftpd 2.3.4</p>
+                        <p class="text-accentGreen">[OPEN] Port 22 (SSH) - Banner: OpenSSH 4.7p1 Debian</p>
+                        <p class="text-accentGreen">[OPEN] Port 80 (HTTP) - Banner: Apache httpd 2.2.8</p>
+                        <p class="text-yellow-400">[!] WARNING: Port 21 banner indicates potential vulnerable version (vsftpd 2.3.4)</p>
+                        <p class="text-gray-500">[+] Scan completed in 1.42 seconds. 3 open ports found.</p>
+                    </div>
+
+                    <!-- View 2: Code Snippet -->
+                    <div id="view-code" class="hidden bg-black/90 p-4 rounded border border-borderSubtle font-mono text-xs text-gray-300 overflow-x-auto">
+<pre class="text-gray-300"><span class="text-purple-400">import</span> socket
+<span class="text-purple-400">from</span> concurrent.futures <span class="text-purple-400">import</span> ThreadPoolExecutor
+
+<span class="text-purple-400">def</span> <span class="text-accentCyan">scan_port</span>(ip, port):
+    <span class="text-purple-400">try</span>:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(<span class="text-accentGreen">1.0</span>)
+        result = sock.connect_ex((ip, port))
+        <span class="text-purple-400">if</span> result == <span class="text-accentGreen">0</span>:
+            banner = sock.recv(<span class="text-accentGreen">1024</span>).decode().strip()
+            <span class="text-purple-400">return</span> (port, True, banner)
+        sock.close()
+    <span class="text-purple-400">except</span>:
+        <span class="text-purple-400">pass</span>
+    <span class="text-purple-400">return</span> (port, False, <span class="text-accentGreen">""</span>)</pre>
+                    </div>
+
+                    <!-- View 3: Architecture -->
+                    <div id="view-arch" class="hidden bg-black/90 p-6 rounded border border-borderSubtle font-mono text-xs text-center text-gray-400">
+                        <div class="inline-block border border-accentCyan/40 p-3 rounded bg-slateBg text-accentCyan mb-2">
+                            [CLI User Input: Target IP & Ports]
+                        </div>
+                        <div class="text-gray-600 my-1">&darr;</div>
+                        <div class="inline-block border border-accentGreen/40 p-3 rounded bg-slateBg text-accentGreen mb-2">
+                            [ThreadPoolExecutor - 20 Concurrent Socket Workers]
+                        </div>
+                        <div class="text-gray-600 my-1">&darr;</div>
+                        <div class="inline-block border border-purple-400/40 p-3 rounded bg-slateBg text-purple-300">
+                            [Banner Grabber & Vulnerability Flag Engine]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Courses / Classes Taken -->
+        <section id="courses" class="scroll-mt-24 space-y-6">
+            <div class="border-b border-borderSubtle pb-4">
+                <span class="text-xs font-mono text-accentCyan">SECTION 03</span>
+                <h2 class="text-2xl font-bold text-white font-mono mt-1">Key VIT Vellore Coursework</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Course 1 -->
+                <div class="bg-cardBg p-5 rounded-lg border border-borderSubtle space-y-3">
+                    <span class="text-xs font-mono text-accentCyan">CSE1001 / CSE1002</span>
+                    <h3 class="text-lg font-bold text-white">Problem Solving & Programming</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Focused on writing structured logic in Python and C++. Covered fundamental data structures, memory allocation, and modular code design.
+                    </p>
+                    <div class="pt-2 text-xs font-mono text-gray-300 border-t border-borderSubtle/60">
+                        <strong class="text-accentGreen">Skills Gained:</strong> Algorithmic logic, multi-threading basics, custom automation scripts.
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-cardBg p-5 rounded-lg border border-borderSubtle space-y-3">
+                    <span class="text-xs font-mono text-accentCyan">SWE2001</span>
+                    <h3 class="text-lg font-bold text-white">Computer Networks & Security</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Deep dive into TCP/IP layers, routing mechanics, packet inspection, cryptographic principles (symmetric/asymmetric), and wireless security.
+                    </p>
+                    <div class="pt-2 text-xs font-mono text-gray-300 border-t border-borderSubtle/60">
+                        <strong class="text-accentGreen">Skills Gained:</strong> Wireshark PCAP analysis, Nmap usage, network traffic debugging.
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-cardBg p-5 rounded-lg border border-borderSubtle space-y-3">
+                    <span class="text-xs font-mono text-accentCyan">MAT1001</span>
+                    <h3 class="text-lg font-bold text-white">Calculus & Technical Calculus</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Mathematical modeling, differential equations, and linear algebra techniques vital for quantitative analysis and algorithm complexity.
+                    </p>
+                    <div class="pt-2 text-xs font-mono text-gray-300 border-t border-borderSubtle/60">
+                        <strong class="text-accentGreen">Skills Gained:</strong> Quantitative problem solving, analytical rigor for cryptographic math.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Sample Writing Section -->
+        <section id="writing" class="scroll-mt-24 space-y-6">
+            <div class="border-b border-borderSubtle pb-4">
+                <span class="text-xs font-mono text-accentCyan">SECTION 04</span>
+                <h2 class="text-2xl font-bold text-white font-mono mt-1">Sample Academic Writing</h2>
+            </div>
+
+            <!-- Cover Page Preview Card -->
+            <div class="bg-cardBg p-6 rounded-lg border border-borderSubtle space-y-4">
+                <div class="flex items-center justify-between border-b border-borderSubtle pb-3">
+                    <div class="font-mono text-xs text-gray-400">
+                        <i class="fa-solid fa-file-contract text-accentCyan mr-2"></i>Official Assignment Format
+                    </div>
+                    <span class="text-xs font-mono text-accentGreen">VIT Academic Standard</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Sample 1 -->
+                    <div class="space-y-3 p-4 rounded bg-slateBg border border-borderSubtle">
+                        <span class="text-xs font-mono text-purple-400">English / Technical Communication</span>
+                        <h4 class="text-base font-bold text-white">The Ethical Implications of Generative AI in Cyber Offense & Defense</h4>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            An analytical essay evaluating how LLMs lower the barrier to automated spear-phishing while simultaneously empowering Security Operations Centers (SOCs) with automated log analysis.
+                        </p>
+                        <button onclick="openModal('sample1')" class="text-xs font-mono text-accentCyan hover:underline">
+                            Read Summary & Cover Sheet &rarr;
+                        </button>
+                    </div>
+
+                    <!-- Sample 2 -->
+                    <div class="space-y-3 p-4 rounded bg-slateBg border border-borderSubtle">
+                        <span class="text-xs font-mono text-accentCyan">Subject-Specific Report</span>
+                        <h4 class="text-base font-bold text-white">Comparative Analysis of Symmetric vs. Asymmetric Encryption Protocols</h4>
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            A technical report comparing AES-256 and RSA protocols in performance, key distribution, and computational overhead for securing TLS/SSL handshakes.
+                        </p>
+                        <button onclick="openModal('sample2')" class="text-xs font-mono text-accentCyan hover:underline">
+                            Read Summary & Cover Sheet &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Resume Section (Minimal 1-Page Layout) -->
+        <section id="resume" class="scroll-mt-24 space-y-6">
+            <div class="flex items-center justify-between border-b border-borderSubtle pb-4">
+                <div>
+                    <span class="text-xs font-mono text-accentCyan">SECTION 05</span>
+                    <h2 class="text-2xl font-bold text-white font-mono mt-1">One-Page Academic Resume</h2>
+                </div>
+                <button onclick="copyResumeText()" class="px-3 py-1.5 rounded bg-cardBg border border-borderSubtle hover:border-accentCyan text-xs font-mono text-gray-300 flex items-center space-x-2">
+                    <i class="fa-solid fa-copy"></i>
+                    <span id="copy-text">Copy Text</span>
+                </button>
+            </div>
+
+            <!-- Resume Paper UI -->
+            <div class="bg-cardBg p-6 sm:p-8 rounded-lg border border-borderSubtle space-y-6 font-mono text-xs">
+                <!-- Header -->
+                <div class="border-b border-borderSubtle pb-4 space-y-1">
+                    <h3 class="text-xl font-bold text-white">CYBERSECURITY STUDENT</h3>
+                    <p class="text-gray-400">VIT Vellore, Tamil Nadu, India &bull; student@vit.ac.in</p>
+                    <div class="text-accentCyan pt-1">GitHub: github.com/student-cyber &bull; LinkedIn: linkedin.com/in/student-cyber</div>
+                </div>
+
+                <!-- Education -->
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-accentGreen uppercase tracking-wider">Education</h4>
+                    <div class="flex justify-between text-gray-200">
+                        <span><strong>B.Tech in CSE (Spec. in Cybersecurity)</strong> - VIT Vellore</span>
+                        <span class="text-gray-400">2024 - 2028</span>
+                    </div>
+                    <p class="text-gray-400 font-sans text-xs">Coursework: Programming in Python/C++, Computer Networks, Calculus, Digital Systems.</p>
+                </div>
+
+                <!-- Skills -->
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-accentGreen uppercase tracking-wider">Technical Skills</h4>
+                    <ul class="text-gray-300 space-y-1 font-sans text-xs">
+                        <li><strong>Languages:</strong> Python, C, C++, Bash Scripting, SQL</li>
+                        <li><strong>Tools & Software:</strong> Wireshark, Nmap, Burp Suite (Basics), Metasploit, Kali Linux, Git</li>
+                        <li><strong>Core Concepts:</strong> TCP/IP, OSI Layers, Cryptography Basics, Vulnerability Reconnaissance</li>
+                    </ul>
+                </div>
+
+                <!-- Projects -->
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-accentGreen uppercase tracking-wider">Projects</h4>
+                    <div class="space-y-1">
+                        <div class="text-gray-200 font-bold">Automated Network Port Scanner (Python)</div>
+                        <p class="text-gray-400 font-sans text-xs">
+                            Developed a multi-threaded scanner to probe TCP ports, identify running banners, and highlight potential vulnerable service configurations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Co-Curricular -->
+                <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-accentGreen uppercase tracking-wider">Extracurriculars</h4>
+                    <ul class="text-gray-300 font-sans text-xs list-disc list-inside">
+                        <li>Active Member, Technical Cybersecurity Club @ VIT Vellore</li>
+                        <li>Regular participant in beginner Capture The Flag (CTF) events on TryHackMe & Hack The Box</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal for Sample Writing -->
+    <div id="writing-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-cardBg border border-borderSubtle max-w-2xl w-full rounded-lg p-6 space-y-4 font-mono text-xs max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-borderSubtle pb-2">
+                <span class="text-accentCyan font-bold">ACADEMIC SUBMISSION COVER SHEET</span>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white text-lg">&times;</button>
+            </div>
+            
+            <div id="modal-content" class="space-y-4 text-gray-300 font-sans text-xs leading-relaxed">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimal Footer -->
+    <footer class="border-t border-borderSubtle py-8 bg-slateBg text-center font-mono text-xs text-gray-500 space-y-3">
+        <div class="flex justify-center space-x-6 text-gray-400 text-base">
+            <a href="#" class="hover:text-accentCyan"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="hover:text-accentCyan"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="hover:text-accentCyan"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>Built for Academic Evaluation &bull; 1st Year Cybersecurity @ VIT Vellore</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Tab switching for project visuals
+        function switchTab(tabName) {
+            document.getElementById('view-terminal').classList.add('hidden');
+            document.getElementById('view-code').classList.add('hidden');
+            document.getElementById('view-arch').classList.add('hidden');
+
+            document.getElementById('btn-terminal').className = "px-2 py-1 rounded hover:bg-borderSubtle text-gray-400";
+            document.getElementById('btn-code').className = "px-2 py-1 rounded hover:bg-borderSubtle text-gray-400";
+            document.getElementById('btn-arch').className = "px-2 py-1 rounded hover:bg-borderSubtle text-gray-400";
+
+            if (tabName === 'terminal') {
+                document.getElementById('view-terminal').classList.remove('hidden');
+                document.getElementById('btn-terminal').className = "px-2 py-1 rounded bg-borderSubtle text-white";
+            } else if (tabName === 'code') {
+                document.getElementById('view-code').classList.remove('hidden');
+                document.getElementById('btn-code').className = "px-2 py-1 rounded bg-borderSubtle text-white";
+            } else if (tabName === 'arch') {
+                document.getElementById('view-arch').classList.remove('hidden');
+                document.getElementById('btn-arch').className = "px-2 py-1 rounded bg-borderSubtle text-white";
+            }
+        }
+
+        // Modal content switcher
+        function openModal(sampleType) {
+            const modal = document.getElementById('writing-modal');
+            const content = document.getElementById('modal-content');
+
+            if (sampleType === 'sample1') {
+                content.innerHTML = `
+                    <div class="p-4 bg-slateBg rounded border border-borderSubtle font-mono text-xs space-y-1 mb-4">
+                        <div class="text-accentCyan font-bold">COURSE: ENG1002 - Technical Report Writing</div>
+                        <div>TITLE: The Ethical Implications of Generative AI in Cyber Offense and Defense</div>
+                        <div>AUTHOR: 1st Year Student (Cybersecurity) | VIT Vellore</div>
+                    </div>
+                    <p class="font-bold text-white text-sm">Cover Page Description & Reflection:</p>
+                    <p>This assignment explores the dual-use nature of generative artificial intelligence in modern cybersecurity. It details how threat actors leverage automated models for social engineering, contrasted against defensive AI implementations in automated incident response.</p>
+                    <p class="font-bold text-white text-sm mt-3">Why it showcases my skills:</p>
+                    <p>Demonstrates critical thinking, formal academic structuring, ethical evaluation, and clear technical communication without overly dense jargon.</p>
+                `;
+            } else {
+                content.innerHTML = `
+                    <div class="p-4 bg-slateBg rounded border border-borderSubtle font-mono text-xs space-y-1 mb-4">
+                        <div class="text-accentCyan font-bold">COURSE: SWE2001 - Computer Networks & Cryptography</div>
+                        <div>TITLE: Comparative Analysis of Symmetric vs. Asymmetric Encryption Protocols</div>
+                        <div>AUTHOR: 1st Year Student (Cybersecurity) | VIT Vellore</div>
+                    </div>
+                    <p class="font-bold text-white text-sm">Cover Page Description & Reflection:</p>
+                    <p>A technical comparison evaluating AES-256 (symmetric) versus RSA-2048 (asymmetric). Evaluates mathematical throughput, key exchange mechanics (Diffie-Hellman), and hybrid encryption as implemented in SSL/TLS protocols.</p>
+                    <p class="font-bold text-white text-sm mt-3">Why it showcases my skills:</p>
+                    <p>Proves foundational domain knowledge in core cryptography concepts, data security protocols, and structured academic reporting.</p>
+                `;
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('writing-modal').classList.add('hidden');
+        }
+
+        // Resume Copy helper
+        function copyResumeText() {
+            const resumeText = `FIRST-YEAR CYBERSECURITY STUDENT - VIT VELLORE
+Email: student@vit.ac.in | GitHub: github.com/student-cyber
+
+EDUCATION:
+B.Tech in CSE (Spec. in Cybersecurity) - VIT Vellore (2024 - 2028)
+
+TECHNICAL SKILLS:
+- Languages: Python, C, C++, Bash, SQL
+- Tools: Wireshark, Nmap, Burp Suite, Metasploit, Kali Linux
+- Concepts: TCP/IP, Cryptography, Network Analysis
+
+PROJECTS:
+Automated Network Port Scanner (Python): Multi-threaded TCP scanner with banner grabbing.`;
+
+            const btnText = document.getElementById('copy-text');
+            navigator.clipboard.writeText(resumeText).then(() => {
+                btnText.textContent = "Copied!";
+                setTimeout(() => { btnText.textContent = "Copy Text"; }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
